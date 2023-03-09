@@ -1,0 +1,8 @@
+#gcc编译流程
+1.预处理 gcc -E test.c -o test.i 文件包含，条件编译，宏替换等
+2.编译 gcc -S test.i -o test.s 语法分析，语义分析及优化生成的汇编代码 
+3.汇编 gcc -C test.s -o test.o 将汇编代码转为机器码，调用as
+4.链接 gcc test.o -o test 将各个目标文件链接起来生成可执行文件，调用ld
+
+实际编译 gcc test.c -o test
+

@@ -1,0 +1,29 @@
+#NORMAL模式
+按ESC键进入
+
+#INSERT模式
+a在所在光标后插入,A在光标所在行末插入
+i在光标前插入，I在光标所在的行前插入
+o在光标下一行插入，O在光标上一行插入
+
+#visual模式
+v按字符选择，V按行选择，ctrl+V按块选择[类似与矩形选择]
+
+
+#command-line模式
+
+按/正向搜索？反向搜索：一般命令
+
+#常用命令
+:set nu显示行号
+:sp 多个文件垂直分布:vsp水平分布
+:w 保存:w!强制保存
+:q 退出:q!强制退出
+h j k l光标移动前面可加数字normal模式下使用
+{移至上一个段落首}移至下一个段落首
+:s/old/new，用new替换行中首次出现的old
+:s/old/new/g，用new替换行中所有出现的old
+:#,#s/old/new/g，用new替换第#行到第#行中的old
+:%s/old/new/g，用new替换整篇中出现的old
+:s/old/new/c，加c强制用户对每个替换进行确认
+dfdf
